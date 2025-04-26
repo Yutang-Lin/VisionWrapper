@@ -1,0 +1,18 @@
+[build-system]
+requires = [ "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vision_wrapper"
+dynamic = [ "version" ]
+authors = [
+    { name = "yutang" },
+]
+requires-python = ">=3.8"
+
+dependencies = [
+    "numpy",
+    "vuer[all]",
+    "avp_stream",
+    "opencv-python",
+]
