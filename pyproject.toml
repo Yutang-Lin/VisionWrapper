@@ -12,7 +12,7 @@ requires-python = ">=3.8"
 
 dependencies = [
     "numpy",
-    "vuer[all]",
+    "vuer[all]==0.0.32rc7",
     "avp_stream",
     "opencv-python",
 ]

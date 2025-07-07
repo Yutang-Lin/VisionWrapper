@@ -213,4 +213,4 @@ class VisionWrapper:
         left_hand_mat = np.einsum('bik,bkj->bij', T_flip_left, data['left_fingers'].copy())
         right_hand_mat = np.einsum('bik,bkj->bij', T_flip_right, data['right_fingers'].copy())
 
-        return head_mat, left_wrist_mat, right_wrist_mat, left_hand_mat[:3, 3], right_hand_mat[:3, 3]
+        return head_mat, left_wrist_mat, right_wrist_mat, left_hand_mat[:, :3, 3], right_hand_mat[:, :3, 3]
